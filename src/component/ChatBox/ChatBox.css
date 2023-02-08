@@ -1,0 +1,52 @@
+.chatBox-navbar {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    position: fixed;
+    top: 0;
+    width: 63%;
+    
+    background-color: white;
+}
+
+.user-name-status {
+    display: flex;
+    flex-direction: column;
+}
+
+svg {
+    margin: 0rem 0.6rem !important;
+}
+
+.user-img-tag{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+.user-name-heading{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.footer-layout{
+    position: fixed;
+    display: flex;
+    width: 63%;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    background-color: white;
+    padding: 0.8rem;
+}
+
+.send-msg{
+    width: 60%;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.4rem;
+
+}

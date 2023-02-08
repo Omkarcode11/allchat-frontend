@@ -1,0 +1,23 @@
+.home-layout {
+    display: flex;
+}
+
+.menu {
+    background-color: whitesmoke;
+    height: 100vh;
+    overflow-y: auto;
+    flex: 0.7;
+}
+
+.online-fr {
+    height: 100vh;
+    background-color: beige;
+    overflow-y: scroll;
+    flex: 3;
+}
+
+.chat-box {
+    height: 100vh;
+    background-color: azure;
+    flex: 6;
+}

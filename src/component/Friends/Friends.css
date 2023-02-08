@@ -1,0 +1,20 @@
+
+
+.heading {
+    margin: 0rem 1rem;
+}
+
+.friend-search {
+    padding: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid silver;
+    margin: 0.7rem 0.9rem;
+}
+
+.fr-heading {
+    position: sticky;
+    top: 0rem;
+    background-color: white;
+    z-index: 4;
+    border-bottom: 1px solid silver;
+}

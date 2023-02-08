@@ -1,0 +1,36 @@
+.login-layout{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-wrapper{
+    background-color: lightblue;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.user-name-input{
+    margin-bottom: 0.3rem;
+}
+.login-wrapper input{
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.5rem;
+}
+.user-password-input{
+    margin: 1rem 0rem;
+}
+
+.button-log-sign{
+    display: flex ;
+    justify-content: space-between;
+}
+
+.login-heading{
+    text-align: center;
+}

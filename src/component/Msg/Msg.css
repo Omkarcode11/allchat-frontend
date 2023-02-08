@@ -1,0 +1,17 @@
+.own{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.msg-user{
+    background-color: lightblue;
+    width: fit-content;
+    margin: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+
+.people-img{
+    position: relative;
+    border-radius: 50%;
+    width: 3.3rem;
+    height: 3.3rem;
+}
+.online-status{
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 50%;
+
+}
+.people-avatar{
+    border: 1px solid silver;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.people-card-layout{
+    display: flex;
+    margin: 0.5rem 1rem;
+    border-bottom: 1px solid silver;
+    padding-bottom: 0.6rem;
+}
+
+
+.people-card-body{
+    margin: 0rem 1rem;
+}
+
+.user-name{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.last-msg{
+    font-size: 0.9rem;
+}
+
+
+
+.people-card-layout:hover{
+    cursor: pointer;
+
+}
