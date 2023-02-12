@@ -17,36 +17,33 @@ function Login() {
   const { user, setUser } = useContext(AppContext);
 
   async function loginHandler() {
-    try{
+    try {
       let user = await axios.post(`${URL}/user/get`, userInfo);
-      if (user?.statusText == 'OK') {
+      if (user?.statusText === 'OK') {
         setUser({
-          id : user.data['id'],
+          id: user.data['id'],
           name: userInfo.name,
-          username : user.data.username,
+          username: user.data.username,
           authenticated: true,
         });
         navigate('/');
-      } 
-    }
-      catch(err){
-
       }
-      setUserInfo({
-        name: '',
-        password: '',
-      });
-      setNotify(true)
+    } catch (err) {}
+    setUserInfo({
+      name: '',
+      password: '',
+    });
+    setNotify(true);
   }
 
   useEffect(() => {
     if (notify) {
       setTimeout(() => setNotify(false), 2000);
     }
-    if(user.authenticated){
-      navigate('/')
+    if (user.authenticated) {
+      navigate('/');
     }
-  }, [notify]);
+  }, [notify, navigate,user]);
 
   return (
     <div className="login-layout">

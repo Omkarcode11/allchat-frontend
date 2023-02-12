@@ -1,8 +1,9 @@
 import './App.css';
+import Home from './component/Pages/Home/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// const Home = lazy(() => import('./component/Pages/Home/Home'));
 import Login from './component/Pages/Login/Login';
-import Home from './component/Pages/Home/Home';
-import { createContext, useState } from 'react';
+import { createContext, useRef, useState } from 'react';
 import SignUp from './component/Pages/SignUp/SignUp';
 export const AppContext = createContext();
 
@@ -17,11 +18,32 @@ function App() {
     name: '',
     username: '',
   });
-
+  const [onlineUsers, setOnlineUsers] = useState([]);
   const [conversation, setConversation] = useState({});
   const [chats, setChats] = useState([]);
+  const socket = useRef();
+  const [receiverUser,setReceiverUser] = useState({})
+  const [show,setShow] = useState(null)
   return (
-    <AppContext.Provider value={{ user, setUser, conversation, setConversation, chats, setChats , user2,setUser2 }}>
+    <AppContext.Provider
+      value={{
+        user,
+        setUser,
+        show,
+        setShow,
+        conversation,
+        setConversation,
+        chats,
+        setChats,
+        user2,
+        setUser2,
+        socket,
+        receiverUser,
+        setReceiverUser,
+        onlineUsers,
+        setOnlineUsers,
+      }}
+    >
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />

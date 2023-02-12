@@ -6,7 +6,7 @@
     border-bottom: 1px solid silver;
     position: fixed;
     top: 0;
-    width: 63%;
+    width: 60%;
     
     background-color: white;
 }
@@ -36,7 +36,7 @@ svg {
 .footer-layout{
     position: fixed;
     display: flex;
-    width: 63%;
+    width: 60%;
     justify-content: space-around;
     align-items: center;
     bottom: 0;
@@ -49,4 +49,22 @@ svg {
     padding: 0.2rem 0.8rem;
     border-radius: 0.4rem;
 
+}
+
+.main-message-layout{
+    background-color: red;
+
+}
+
+
+
+
+@media screen and (max-width:780px) {
+    .footer-layout{
+        width: 90%;
+    }
+    .chatBox-navbar{
+        width: 90%;
+    }
+    
 }

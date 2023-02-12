@@ -5,19 +5,64 @@
 .menu {
     background-color: whitesmoke;
     height: 100vh;
-    overflow-y: auto;
-    flex: 0.7;
+    overflow-y: scroll;
+    width: 4.5rem ;
+
 }
 
 .online-fr {
     height: 100vh;
     background-color: beige;
     overflow-y: scroll;
-    flex: 3;
+    flex: 1.6;
 }
 
 .chat-box {
-    height: 100vh;
+    margin-top: 6rem;
+    height: 82vh;
+    overflow: auto;
     background-color: azure;
-    flex: 6;
+    flex: 3;
 }
+
+
+@media only screen and (max-width:780px) {
+    .chat-box{
+        width: 90%;
+        display: block;
+        position: relative;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .online-fr{
+       width: 90%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+}
+/* 
+@media only screen and (max-width:780px) {
+    .online-fr:active{
+        display: none;
+    } */
+
+    
+/* } */
+@media only screen and (max-width:440px) {
+    .menu{
+       width: 15%;
+    }
+    .online-fr{
+        width: 85%;
+    }
+    .chat-box{
+        width: 85%;
+    }
+
+    
+}
+

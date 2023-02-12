@@ -7,9 +7,14 @@ import './ChatBox.css';
 function ChatBox() {
   return (
     <div className="chatBox-layout">
+   
       <ChatHeader />
+   
       <Messages />
+   
+     
       <ChatFooter />
+  
     </div>
   );
 }
